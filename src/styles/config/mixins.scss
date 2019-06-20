@@ -1,0 +1,23 @@
+@mixin laptop-lg {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (max-width:1024px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width:480px) {
+        @content;
+    }
+}
+
+$yellows: linear-gradient(to right, #fff 1%, #ff8740 15%, #ff8740 85%, #fff 100%);
+$greyBG: linear-gradient(to right, #dddbd4 1%, #ebeae4 15%, #ebeae4 85%, #dddbd4 100%)

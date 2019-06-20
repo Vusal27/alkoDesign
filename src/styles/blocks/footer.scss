@@ -1,0 +1,28 @@
+.footer {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 83px;
+    box-sizing: border-box;
+    background: $greyBG;
+    @include phone() {
+        padding: 10px;
+    }
+    &__list {
+        display: flex;
+        margin-right: 40px;
+        @include phone() {
+            margin-right: 20px;
+        }
+    }
+    &__item {
+        padding: 0 15px;
+        &:first-child {
+            border-right: 1px solid black;
+        }
+    }
+    &__link {
+        color: #e02222;
+    }
+}

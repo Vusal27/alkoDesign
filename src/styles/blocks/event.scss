@@ -1,0 +1,76 @@
+.event {
+    background: $greyBG;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 60px;
+    overflow: hidden;
+    @include phone() {
+        padding-bottom: 40px;
+    }
+    &__object {
+        position: absolute;
+        width: 15%;
+        top: 5%;
+        z-index: -1;
+        @include laptop() {
+            width: 25%;
+        }
+        @include phone() {
+            display: none;
+        }
+        &--left {
+            left: -2%;
+        }
+        &--right {
+            right: 0;
+        }
+    }
+    &__content {
+        padding-bottom: 40px;
+    }
+    &__btn-sign {
+        display: block;
+        margin: 0 auto 30px;
+        font-size: 27px;
+        color: white;
+        background: #df5737;
+        border: none;
+        padding: 20px 30px;
+        border-radius: 50px;
+        box-shadow: 
+        inset 0px 11px 8px -6px #e02222,
+        inset 0px -11px 8px -6px #e02222;
+        cursor: pointer;
+        position: relative;
+        border-top: 4px solid $yellows;
+        transition: .2s;
+        font-family: "amazing_grotesk", Helvetica, sans-serif;
+        @include phone() {
+            font-size: 22px;
+            padding: 15px 25px;
+        }
+        &:hover {
+            margin-top: 4px;
+            margin-bottom: 26px;
+            background: #ed633d;
+        }
+        &:hover::before {
+            bottom: 8px;
+            z-index: -1;
+        }
+        &::before {
+            content: "";
+            display: block;
+            transition: .2s;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            background: $yellows;
+            cursor: pointer;
+        } 
+    }
+}

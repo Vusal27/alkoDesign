@@ -1,0 +1,33 @@
+.content {
+    text-align: center;
+    &__date {
+        font-size: 45px;
+        color: #5f5b5b;
+        font-family: "lobster", Helvetica, sans-serif;
+        @include phone() {
+            font-size: 30px;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 64px;
+        font-weight: bold;
+        color: #f94f33;
+        font-family: "PFCentroSlabProBold", Helvetica, sans-serif;
+        @include phone() {
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+    }
+    &__description {
+        font-size: 18px;
+        color: #5f5b5b;
+        width: 75%;
+        max-width: 700px;
+        margin: 0 auto;
+        @include phone() {
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}

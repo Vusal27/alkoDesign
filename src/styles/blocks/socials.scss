@@ -1,0 +1,28 @@
+.socials {
+    display: flex;
+    &__item {
+        margin-right: 10px;
+    }
+    &__link {
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #e02222;
+        border-radius: 50px;
+        color: #e02222;
+        font-weight: bold;
+        font-size: 22px;
+        &:hover {
+            border-color: #ff4e4e;
+            color: #ff4e4e;
+        }
+        &--rotate {
+            transform: rotate(90deg);
+        }
+        &--f {
+            font-size: 28px;
+        }
+    }
+}
